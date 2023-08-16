@@ -1,8 +1,10 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
+
 
 public class MemoryMemberRepository implements  MemberRepository{
 
@@ -39,4 +41,7 @@ public class MemoryMemberRepository implements  MemberRepository{
     public void ClearStore(){
         store.clear();
     }
+
+
+
 }

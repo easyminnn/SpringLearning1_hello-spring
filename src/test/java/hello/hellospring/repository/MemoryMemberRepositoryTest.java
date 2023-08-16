@@ -10,17 +10,17 @@ import java.util.Optional;
 
 import static org.assertj.core.api.Assertions.*;
 
-public class MemoryMemberRepositoryTest {
+        public class MemoryMemberRepositoryTest {
 
-    MemoryMemberRepository repository = new MemoryMemberRepository();
+            MemoryMemberRepository repository = new MemoryMemberRepository();
 
-    @AfterEach
-    public void AfterEach(){
-        repository.ClearStore();
-    }
+            @AfterEach
+            public void AfterEach(){
+                repository.ClearStore();
+            }
 
-    @Test
-    public void save(){
+            @Test
+            public void save(){
         Member member = new Member();
         member.setName("spring");
 
