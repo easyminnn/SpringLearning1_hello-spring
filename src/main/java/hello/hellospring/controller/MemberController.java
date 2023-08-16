@@ -10,7 +10,7 @@ public class MemberController {
     private MemberService memberService;
 
 
-    //생성자 통한 주입이 가장 좋다.!
+    //생성자 통한 주입이 가장 좋다.!!
    @Autowired
     public MemberController(MemberService memberService) {
         this.memberService = memberService;
